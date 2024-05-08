@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{FE5F9434-22F5-F86F-A0FA-A806351A8AE7}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../TuwaiqWeek2/Assets/Script/Player.cs">
+    <Files>
+      <File FileName="../TuwaiqWeek2/Assets/Script/Player.cs" Line="15" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="71848f82-a4e9-469e-8d18-9602a39f61ec" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
