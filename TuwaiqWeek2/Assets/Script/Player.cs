@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+//using System.Numerics;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private bool canJump;
     private bool doubleJump;
+    private int countJump;
 
     // Start is called before the first frame update
     void Start()
@@ -59,26 +61,68 @@ public class Player : MonoBehaviour
 
         if (grounded == true)
         {
+            countJump = 0;
             doubleJump = false;
             canJump = true;
         }
         else
         {
-            doubleJump = false;
-            canJump = false;
+            doubleJump = true;
+            //canJump = false;
         }
+
+        ////Keys
+        //bool jump = Input.GetKeyDown(KeyCode.Space);
+
+        ////Statics
+        //bool isGrounded = Physics.CheckSphere(groundDetector.position, 0.1f, ground);
+        //bool isJumping = jump && isGrounded;
+        //bool isSneaking = sneak;
+        //bool isSliding = !isSneaking && slide && !slideing && !slideStop && isGrounded;
+
+        //if (isGrounded)
+        //{
+        //    print("vallah");
+        //    jumpCount = 0;
+        //}
+        //if (isJumping && (jumpCount <= 2) && !isSliding && !isSneaking)// HERE <--
+        //{
+        //    // Increase Jump Count
+        //    jumpCount++;
+
+        //    // First check the jump number
+        //    if (jumpCount == 1)
+        //    {
+        //        rig.AddForce(Vector3.up * jumpForce);
+        //    }
+        //    else if (jumpCount == 2)
+        //    {
+        //        rig.AddForce(Vector3.up * secondJunp);
+        //    }
+        //}
 
         Jump();
     }
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && canJump == true)
+        if (Input.GetButtonDown("Jump") && canJump == true && countJump <=2)
         {
-            
+            countJump++;
+
+            if (countJump == 1)
+            {
+                rb.AddForce(Vector3.up * jumpForce);
+
+            } else if (countJump == 2 && doubleJump == true )
+            {
+                doubleJump = false;
+                rb.AddForce(Vector3.up * jumpForce);
+            }
             canJump = false;
-            rb.AddForce(Vector3.up * jumpForce);
+
         }
+
     }
 
 }
