@@ -28,7 +28,7 @@ public class EnemyGameHandler : MonoBehaviour
             enemyHealthSystem.DamageEnemy(10);
             if (enemyHealthSystem.getEnemyHealth() == 0)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
 
         }else if (collision.gameObject.tag == "laser")
@@ -36,7 +36,7 @@ public class EnemyGameHandler : MonoBehaviour
             enemyHealthSystem.DamageEnemy(30);
             if (enemyHealthSystem.getEnemyHealth() == 0)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
         }
     }
