@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{FE5F9434-22F5-F86F-A0FA-A806351A8AE7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../TuwaiqWeek2/Assets/Script/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Player.cs">
     <Files>
-      <File FileName="../TuwaiqWeek2/Assets/Script/Player.cs" Line="15" Column="26" />
+      <File FileName="Assets/Script/Player.cs" Line="35" Column="70" />
+      <File FileName="Assets/Script/StairClimb.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/SoundManager.cs" Line="19" Column="39" />
+      <File FileName="Assets/Script/chestOpen.cs" Line="8" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="71848f82-a4e9-469e-8d18-9602a39f61ec" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cc9947d0-5484-4f56-a6a2-f188bf7ad78d" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

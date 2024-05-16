@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{AC3A66B2-C649-9E41-AD3A-4DFF6FD5633A}|">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Player.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9fb10433-f9ea-4370-878a-7036e636d35b" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GunRycast.cs">
     <Files>
-      <File FileName="Assets/Script/Player.cs" Line="62" Column="31" />
+      <File FileName="Assets/Scripts/Gun.cs" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="11" Column="48" />
+      <File FileName="Assets/Scripts/HealthSystem.cs" />
+      <File FileName="Assets/Scripts/EnemyHealthSystem.cs" />
+      <File FileName="Assets/Scripts/gameHandler.cs" />
+      <File FileName="Assets/Scripts/GunRycast.cs" Line="14" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2b37ba7c-c08e-4ee3-b9f3-32690a82f8ce" />
+  <MultiItemStartupConfigurations />
 </Properties>
