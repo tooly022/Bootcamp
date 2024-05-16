@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class EnemyHealthSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private float heathPoint;
+    private float maxHealth;
+
+
+    public EnemyHealthSystem(int maxHealth)
     {
-        
+        this.maxHealth = maxHealth;
+        heathPoint = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    public float getEnemyHealth() { return heathPoint; }
+
+    public float getEnemyHealthPercentage() { return heathPoint / maxHealth; }
+
+    public void DamageEnemy(int damageAmount)
     {
-        
+        heathPoint -= damageAmount;
+        if (heathPoint <= 0) {
+            heathPoint = 0;
+        }
     }
+
+    //public void heal(int healAmount)
+    //{
+
+    //    heathPoint += healAmount;
+
+    //    if (heathPoint > maxHealth)
+    //    {
+    //        heathPoint = maxHealth;
+    //    }
+
+    //}
 }

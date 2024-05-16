@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float bulletSpeed;
+    [SerializeField] private float bulletLifeSpan;
+    private Rigidbody rb;
+
+    private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * bulletSpeed);
+
+        Invoke("Delete", bulletLifeSpan);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+
+    }
+
+    private void Delete()
+    {
+        Destroy(gameObject);
     }
 }

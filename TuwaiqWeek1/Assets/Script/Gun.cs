@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Transform bulletSpawnPoint;
+    [SerializeField] private GameObject bullet;
 
-    // Update is called once per frame
-    void Update()
+    public SoundManager sound;
+
+
+    private void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(bullet, bulletSpawnPoint.position, transform.rotation);
+            sound.PlayGun();
+
+        }
     }
 }

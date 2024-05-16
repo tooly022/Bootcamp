@@ -368,6 +368,7 @@
 "Assets/Script/Bullet.cs"
 "Assets/Script/chestOpen.cs"
 "Assets/Script/Enemy.cs"
+"Assets/Script/EnemyGameHandler.cs"
 "Assets/Script/EnemyHealthSystem.cs"
 "Assets/Script/gameHandler.cs"
 "Assets/Script/Gun.cs"

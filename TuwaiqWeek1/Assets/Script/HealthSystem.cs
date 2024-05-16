@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private float heathPoint;
+    private float maxHealth;
+
+
+    public HealthSystem(int maxHealth)
     {
-        
+        this.maxHealth = maxHealth;
+        heathPoint = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    public float getHealth() { return heathPoint; }
+
+    public float getHealthPercentage() { return heathPoint / maxHealth; }
+
+    public void Damage(int damageAmount)
     {
-        
+        heathPoint -= damageAmount;
+        if (heathPoint <= 0) { heathPoint = 0; }
+    }
+
+    public void heal(int healAmount)
+    {
+
+        heathPoint += healAmount;
+
+        if (heathPoint > maxHealth)
+        {
+            heathPoint = maxHealth;
+        }
+
     }
 }

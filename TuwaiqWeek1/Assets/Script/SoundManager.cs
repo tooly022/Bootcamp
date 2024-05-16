@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource audioSource , walk;
-    public AudioClip jump, chestOpen;
+    public AudioClip jump, chestOpen, gun, laser;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +24,14 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.PlayOneShot(chestOpen);
     }
-    // Update is called once per frame
-    void Update()
+
+    public void PlayGun()
     {
-        
+        audioSource.PlayOneShot(gun);
+    }
+
+    public void PlayLaser()
+    {
+        audioSource.PlayOneShot(laser);
     }
 }
